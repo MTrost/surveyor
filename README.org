@@ -1,0 +1,9 @@
+* README
+
+This README documents minimal steps to get this app running:
+
+- Install Ruby version >= 2.1.2
+
+- Database creation: =rake db:migrate=
+
+- Run App: =rails s=
