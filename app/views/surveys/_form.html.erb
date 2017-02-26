@@ -2,7 +2,7 @@
   <%= f.inputs do %>
     <%= f.input :name %>
     <%= f.input :age %>
-    <%= f.input :sex %>
+    <%= f.input :sex, as: :select, collection: ["male", "female"] %>
     <%= f.input :rating, as: :radio, collection: 1.upto(10) %>
     <%= f.input :comment %>
   <% end %>
