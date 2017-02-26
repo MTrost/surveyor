@@ -1,0 +1,13 @@
+<%= semantic_form_for @survey do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name %>
+    <%= f.input :age %>
+    <%= f.input :sex %>
+    <%= f.input :rating, as: :radio, collection: 1.upto(10) %>
+    <%= f.input :comment %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>
